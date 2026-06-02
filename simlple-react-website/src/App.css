@@ -1,0 +1,124 @@
+/* --- Universal Reset & Base Styles --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+/* --- Layout Wrapper (Keeps footer pinned to bottom) --- */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* --- Header & Logo Customization --- */
+.app-header {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0284c7;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* Space between image and text */
+}
+
+.logo span {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 35px; /* Constrains your logo image height beautifully */
+  width: auto; /* Preserves the structural aspect ratio */
+  display: block;
+}
+
+/* --- Navigation Items --- */
+.nav-list {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-list button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #64748b;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.2s;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-list button:hover {
+  color: #0284c7;
+}
+
+.nav-list button.active {
+  color: #0284c7;
+  border-bottom: 2px solid #4d6774;
+}
+
+/* --- Main Content Cards --- */
+.app-main {
+  flex: 1; /* Forces the main section to stretch and fill empty vertical space */
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  width: 100%;
+}
+
+.card h2 {
+  color: #0f172a;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+code {
+  background-color: #f1f5f9;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+/* --- Footer Area --- */
+.app-footer {
+  background-color: #0f172a;
+  color: #94a3b8;
+  text-align: center;
+  padding: 1.25rem;
+  font-size: 0.875rem;
+}
