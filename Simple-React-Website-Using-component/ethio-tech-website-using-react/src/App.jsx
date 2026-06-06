@@ -5,7 +5,8 @@ import logoImg from "../src/assets/company-logo.png";
 function Logo() {
   return (
     <div className="logo">
-      <img src={logoImg} alt="Logo" className="logo-image" /> CareCore
+      <img src={logoImg} alt="Logo" className="logo-image" /> EthioTech
+      Solutions
     </div>
   );
 }
@@ -115,7 +116,7 @@ function MainBody({ currentPage }) {
       ),
     },
     about: {
-      title: "About CareCore",
+      title: "About EthioTech Solutions",
       text: "Professional system built for learning.",
     },
     login: { title: "Authentication", component: <LoginForm /> },
@@ -150,7 +151,7 @@ export default function App() {
       <MainBody currentPage={page} />
 
       <footer className="app-footer">
-        <p>&copy; 2026 CareCore</p>
+        <p>&copy; 2026 EthioTech Solutions</p>
       </footer>
     </div>
   );
